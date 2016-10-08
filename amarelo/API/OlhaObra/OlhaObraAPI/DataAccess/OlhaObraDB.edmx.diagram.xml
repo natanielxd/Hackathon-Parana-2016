@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="466a4d3747094b0b9276c4a5e3b40ef3" Name="Diagram1" ZoomLevel="85">
+        <EntityTypeShape EntityType="OlhaObraDBModel.Cidade" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OlhaObraDBModel.Endereco" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="OlhaObraDBModel.Obra" Width="1.5" PointX="5.25" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OlhaObraDBModel.Perfil" Width="1.5" PointX="1.875" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OlhaObraDBModel.Registro" Width="1.5" PointX="7.5" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="OlhaObraDBModel.TipoRegistro" Width="1.5" PointX="8.25" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="OlhaObraDBModel.Usuario" Width="1.5" PointX="4.875" PointY="4.25" IsExpanded="true" />
+        <AssociationConnector Association="OlhaObraDBModel.FK_Endereco_Cidade" ManuallyRouted="false" />
+        <AssociationConnector Association="OlhaObraDBModel.FK_Obra_Endereco" ManuallyRouted="false" />
+        <AssociationConnector Association="OlhaObraDBModel.FK_Registro_Obra" ManuallyRouted="false" />
+        <AssociationConnector Association="OlhaObraDBModel.FK_Usuario_Perfil" ManuallyRouted="false" />
+        <AssociationConnector Association="OlhaObraDBModel.FK_Registro_TipoRegistro" ManuallyRouted="false" />
+        <AssociationConnector Association="OlhaObraDBModel.FK_Registro_Usuario" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
