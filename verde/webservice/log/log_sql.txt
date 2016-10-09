@@ -1,0 +1,29 @@
+Data:09/10/2016 12:10:17;IP:::1;idusuario:SYSTEM;SQL:
+
+ INSERT INTO `linha_geo` (idlinha, lat, long, informacao) VALUES ('4','4546545','121231321','#BusaoLivreTop') ;
+
+Data:09/10/2016 12:11:49;IP:::1;idusuario:SYSTEM;SQL:
+
+ INSERT INTO `linha_geo` (idlinha, latitude, longitude, informacao) VALUES ('4','4546545','121231321','#BusaoLivreTop') ;
+
+Data:09/10/2016 12:12:14;IP:::1;idusuario:SYSTEM;SQL:
+
+ SELECT * FROM `linha_geo`  ORDER BY cadastro   ;
+
+Data:09/10/2016 12:13:56;IP:::1;idusuario:SYSTEM;SQL:
+
+ SELECT * FROM `linha`  ORDER BY linha   ;
+
+Data:09/10/2016 12:14:03;IP:::1;idusuario:SYSTEM;SQL:
+
+ SELECT * FROM `linha`  ORDER BY linha   ;
+
+Data:09/10/2016 12:17:18;IP:::1;idusuario:SYSTEM;SQL:
+
+SELECT l.linha, g.latitude, g.longitude, g.informacao FROM linha_geo g
+                                                INNER JOIN linha l ON l.idlinha = g.idlinha;
+
+Data:09/10/2016 12:17:48;IP:::1;idusuario:SYSTEM;SQL:
+
+ SELECT * FROM `linha`  ORDER BY linha   ;
+
