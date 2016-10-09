@@ -17,8 +17,9 @@
             
             public function listar_todos_nome(){                
                 $oLinhaGeo = new Linha_geosModel();
-                $linha_geo = $oLinhaGeo->query("SELECT l.linha, g.latitude, g.longitude, g.informacao FROM linha_geo g
-                                                INNER JOIN linha l ON l.idlinha = g.idlinha");
+                $linha_geo = $oLinhaGeo->query("SELECT g.idlinha_geo as id, l.linha, g.latitude, g.longitude, g.informacao 
+                                            FROM linha_geo g
+                                            INNER JOIN linha l ON l.idlinha = g.idlinha");
                 $info_geo = $oLinhaGeo->fetchAll($linha_geo);
                 header('Content-type: application/json');
                 echo json_encode($info_geo,  JSON_PRETTY_PRINT);
